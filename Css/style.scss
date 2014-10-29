@@ -1,0 +1,162 @@
+@import "_seprator.scss";
+*{
+	box-sizing: border-box;
+		-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+svg{
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+body{
+	width: 100%;
+	font-family: 'Lato', sans-serif;
+	margin:0;
+	padding: 0;
+}
+html{
+	padding: 0;
+}
+.container{
+	background-color: $color2;
+}
+header{
+	background-color: $color2;
+	padding:10% 0;
+	text-align: center;
+	
+	h1{
+		font-weight: 700;
+		color:#fff;
+		span{
+			display: block;
+			width:100%;
+			color:$color3;
+			font-size: .7em;
+			font-weight:300;
+			
+		}
+	}
+}
+section{
+	padding:12% 0;
+	div:first-child{
+		display: flex;
+		align-self: center;
+		justify-content: center;
+		h1{
+			color:#fff;
+		}
+		svg{
+			height:250px;
+			width: 250px;
+		}
+	}	
+}
+.one-column{
+	div{
+		flex-direction: column;
+		text-align: center;
+		div:last-child{
+			
+			width: 90%;
+			align-self: center;
+			p{
+				color:$color3;
+				font-size: 1.4em;
+				font-weight: 300;
+			}
+		}
+	}
+	
+}
+.three-column{
+	div{
+		flex-direction: row;
+		.one{
+			align-content: center;
+			justify-content: center;
+			align-self: flex-start;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			width:33.33333333333333333333%;
+			div:first-child{
+				margin-bottom: 10px;
+			svg{
+				height: 230px;
+				width:230px;
+			}
+			}
+			div:last-child{
+				width: 80%;
+				align-self: center;
+				p{
+					font-size: 1.4em;
+					font-weight: 300;
+					color:$color3;
+					text-align: center;
+				}
+			}
+		}
+	}
+}
+.two-column{
+	div{
+		width: 80%;
+		margin:0 auto;
+		align-self: center;
+		div{
+			p{
+				font-size: 1.4em;
+				font-weight: 300;
+				color:$color3;
+			}
+			text-align: center;
+			width: 50%;
+		}
+	}
+}
+footer{
+	padding-bottom: 1px;
+	height:15%;
+	border-top: 1px solid rgba(0, 0, 0, 0.14);
+	text-align:center;
+	font-weight:300;
+	font-family: 'Lato', sans-serif;
+	color:$color3;
+	font-style:normal;
+	p:first-child{
+		padding: 10px 0;
+		margin:0;
+	}
+	p:last-child{
+		font-size:.8em;
+		}
+	}
+.two-triangle{
+	z-index: 20;
+}
+.two-triangle:before{
+	
+	top: 0px;
+	left: -25%;
+	z-index: -1;
+	width: 150%;
+	height: 50%;
+	background: $color3;
+	transform: rotate(-3deg);
+	transform-origin: 3% 0px 0px;
+}
+.two-triangle:after{
+	
+	top: 0px;
+	left: -25%;
+	z-index: -1;
+	width: 150%;
+	height: 50%;
+	background: $color2;
+	transform: rotate(-2deg);
+	transform-origin: 3% 0px 0px;
+}
