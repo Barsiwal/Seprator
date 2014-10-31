@@ -1,13 +1,13 @@
 @import "_normalize.scss";
-$maincolor:#ffc14b;
+$maincolor:#fa54da;
 $color2:darken($maincolor,20);
-$color3:darken($maincolor,32);
+$color3:darken($color2,20);
 
 .container{
 	width:100%;
 }
 section::after,section::before{
-			position: absolute;
+	position: absolute;
 	content: '';
 	pointer-events: none;
 	
@@ -17,14 +17,13 @@ section{
 	margin:0;	
 }
 .triangles::before{
-left: 50%;
+	left: 50%;
 	top:-50px;
 	background-color: $maincolor;
-width: 100px;
-height: 100px;
-
--webkit-transform: translateX(-50%) rotate(45deg);
-transform: translateX(-50%) rotate(45deg);
+	width: 100px;
+	height: 100px;
+	-webkit-transform: translateX(-50%) rotate(45deg);
+	transform: translateX(-50%) rotate(45deg);
 }
 .triangles::after{
 	left: 50%;
@@ -51,4 +50,19 @@ transform: translateX(-50%) rotate(45deg);
 	fill: $color2;
 	background-color: $maincolor;
 	display: block;
+}
+.curves{
+	z-index: 30;
+}
+.curves:before,.curves:after{
+	height:100%;
+	width: 50%;
+	z-index: -1;
+	top:-10%;
+	border-radius: 0 80px 0 0;
+	background-color: inherit;
+}
+.curves:after{
+	left:50%;
+	border-radius: 80px 0 0 0;
 }

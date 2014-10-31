@@ -19,7 +19,7 @@ html{
 	padding: 0;
 }
 .container{
-	background-color: $color2;
+	background-color: $maincolor;
 }
 header{
 	background-color: $color2;
@@ -137,6 +137,7 @@ footer{
 	}
 .two-triangle{
 	z-index: 20;
+	padding:13% 0;
 }
 .two-triangle:before{
 	

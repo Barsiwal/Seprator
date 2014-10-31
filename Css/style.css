@@ -324,7 +324,7 @@ section {
 .triangles::before {
   left: 50%;
   top: -50px;
-  background-color: #ffc14b;
+  background-color: #fa54da;
   width: 100px;
   height: 100px;
   -webkit-transform: translateX(-50%) rotate(45deg);
@@ -345,15 +345,30 @@ section {
   background: inherit; }
 
 .even {
-  background-color: #ffc14b; }
+  background-color: #fa54da; }
 
 .odd {
-  background-color: #e49400; }
+  background-color: #e107b9; }
 
 #curveUpColor, #curveDownColor, #bigTriangleColor {
-  fill: #e49400;
-  background-color: #ffc14b;
+  fill: #e107b9;
+  background-color: #fa54da;
   display: block; }
+
+.curves {
+  z-index: 30; }
+
+.curves:before, .curves:after {
+  height: 100%;
+  width: 50%;
+  z-index: -1;
+  top: -10%;
+  border-radius: 0 80px 0 0;
+  background-color: inherit; }
+
+.curves:after {
+  left: 50%;
+  border-radius: 80px 0 0 0; }
 
 * {
   box-sizing: border-box;
@@ -375,10 +390,10 @@ html {
   padding: 0; }
 
 .container {
-  background-color: #e49400; }
+  background-color: #fa54da; }
 
 header {
-  background-color: #e49400;
+  background-color: #e107b9;
   padding: 10% 0;
   text-align: center; }
   header h1 {
@@ -387,7 +402,7 @@ header {
     header h1 span {
       display: block;
       width: 100%;
-      color: #a76c00;
+      color: #7e0468;
       font-size: 0.7em;
       font-weight: 300; }
 
@@ -410,7 +425,7 @@ section {
     width: 90%;
     align-self: center; }
     .one-column div div:last-child p {
-      color: #a76c00;
+      color: #7e0468;
       font-size: 1.4em;
       font-weight: 300; }
 
@@ -435,7 +450,7 @@ section {
       .three-column div .one div:last-child p {
         font-size: 1.4em;
         font-weight: 300;
-        color: #a76c00;
+        color: #7e0468;
         text-align: center; }
 
 .two-column div {
@@ -448,7 +463,7 @@ section {
     .two-column div div p {
       font-size: 1.4em;
       font-weight: 300;
-      color: #a76c00; }
+      color: #7e0468; }
 
 footer {
   padding-bottom: 1px;
@@ -457,7 +472,7 @@ footer {
   text-align: center;
   font-weight: 300;
   font-family: 'Lato', sans-serif;
-  color: #a76c00;
+  color: #7e0468;
   font-style: normal; }
   footer p:first-child {
     padding: 10px 0;
@@ -466,7 +481,8 @@ footer {
     font-size: 0.8em; }
 
 .two-triangle {
-  z-index: 20; }
+  z-index: 20;
+  padding: 13% 0; }
 
 .two-triangle:before {
   top: 0px;
@@ -474,7 +490,7 @@ footer {
   z-index: -1;
   width: 150%;
   height: 50%;
-  background: #a76c00;
+  background: #7e0468;
   transform: rotate(-3deg);
   transform-origin: 3% 0px 0px; }
 
@@ -484,7 +500,7 @@ footer {
   z-index: -1;
   width: 150%;
   height: 50%;
-  background: #e49400;
+  background: #e107b9;
   transform: rotate(-2deg);
   transform-origin: 3% 0px 0px; }
 
